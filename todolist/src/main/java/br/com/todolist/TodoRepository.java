@@ -1,2 +1,6 @@
-package br.com.todolist;public class TodoRepository {
+package br.com.todolist;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TodoRepository extends JpaRepository<Todo, Integer> {
 }
